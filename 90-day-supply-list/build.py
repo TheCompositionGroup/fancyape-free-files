@@ -146,14 +146,14 @@ def decorate(c, doc):
         c.drawString(M, H-0.4*inch, "READY WHEN NEEDED  ·  BUILD YOUR 90-DAY HOME RESERVE")
     c.setLineWidth(0.6); c.line(M, 0.55*inch, W-M, 0.55*inch)
     c.setFont("Helvetica", 7.5)
-    c.drawString(M, 0.4*inch, "fancyape.com  ·  THE IDEA IS THE ART. THE HELP IS THE POINT.  ·  Version 1.2  ·  November 2026  ·  Free to share  ·  CC BY 4.0")
+    c.drawString(M, 0.4*inch, "fancyape.com  ·  THE IDEA IS THE ART.  ·  Version 1.3  ·  November 2026  ·  Free to share  ·  CC BY 4.0")
     c.drawRightString(W-M, 0.4*inch, "Page %d" % doc.page)
     c.restoreState()
 
 doc = BaseDocTemplate(os.path.join(os.path.dirname(os.path.abspath(__file__)), "90-day-supply-list.pdf"), pagesize=letter,
                       leftMargin=M, rightMargin=M, topMargin=0.65*inch, bottomMargin=0.7*inch,
                       title="Ready When Needed: Build Your 90-Day Home Reserve",
-                      author="fancyape.com", subject="Version 1.2, November 2026")
+                      author="fancyape.com", subject="Version 1.3, November 2026")
 frame = Frame(M, 0.7*inch, W-2*M, H-1.35*inch, id="f", leftPadding=0, rightPadding=0,
               topPadding=0, bottomPadding=0)
 doc.addPageTemplates([PageTemplate(id="p", frames=[frame], onPage=decorate)])

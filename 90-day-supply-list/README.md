@@ -16,6 +16,7 @@ Free printable 90-day home supply checklist with staged goals (3/14/30/90 days),
 
 ## Changelog
 
+- v1.3, November 2026: footer slogan shortened to "THE IDEA IS THE ART."
 - v1.2, November 2026: clarified 90-day amounts vs. 3-day starting items; removed stray lines in stage boxes; slogan moved to footer, closing block removed; sources reformatted as a table; toilet buckets labeled PEE and POO; added build.py source.
 - v1.1, November 2026: labeled the Stage 1 column "3-DAY"; added water heater shutoff qualifier; toilet bags scaled by household size; medical device power guidance; specific source links; footer simplified to fancyape.com.
 - v1.0, November 2026: first release.
