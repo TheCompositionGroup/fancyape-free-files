@@ -21,3 +21,14 @@ Free printable 90-day home supply checklist with staged goals (3/14/30/90 days),
 ## License
 
 CC BY 4.0. See `LICENSE`. Credit: R. Knowles, The Composition Group LLC (Fancy Ape).
+
+## Updating this file
+
+1. Replace `90-day-supply-list.pdf` at the same path. Never rename it.
+2. Bump the version in the PDF footer (e.g. 1.1 -> 1.2).
+3. Add a changelog line at the top of the Changelog section.
+4. Commit to `main` as "90-day-supply-list vX.X".
+5. Wait for the "pages build and deployment" run in Actions to show green.
+6. On fancyape.com, update the link's `?v=` number to match the new version, e.g.:
+   `https://thecompositiongroup.github.io/fancyape-free-files/90-day-supply-list/90-day-supply-list.pdf?v=1.2`
+7. Test the link in a private window.
