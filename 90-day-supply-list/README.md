@@ -7,6 +7,7 @@ Free printable 90-day home supply checklist with staged goals (3/14/30/90 days),
 | File | Description | Size |
 |---|---|---|
 | `90-day-supply-list.pdf` | The checklist. US Letter, 7 pages, black and white. | 23 KB |
+| `build.py` | Source file. Edit text here, run to rebuild the PDF. | 24 KB |
 
 ## Notes
 
@@ -15,6 +16,7 @@ Free printable 90-day home supply checklist with staged goals (3/14/30/90 days),
 
 ## Changelog
 
+- v1.2, November 2026: clarified 90-day amounts vs. 3-day starting items; removed stray lines in stage boxes; slogan moved to footer, closing block removed; sources reformatted as a table; toilet buckets labeled PEE and POO; added build.py source.
 - v1.1, November 2026: labeled the Stage 1 column "3-DAY"; added water heater shutoff qualifier; toilet bags scaled by household size; medical device power guidance; specific source links; footer simplified to fancyape.com.
 - v1.0, November 2026: first release.
 
@@ -24,11 +26,9 @@ CC BY 4.0. See `LICENSE`. Credit: R. Knowles, The Composition Group LLC (Fancy A
 
 ## Updating this file
 
-1. Replace `90-day-supply-list.pdf` at the same path. Never rename it.
-2. Bump the version in the PDF footer (e.g. 1.1 -> 1.2).
-3. Add a changelog line at the top of the Changelog section.
+1. Edit the text in `build.py` and bump the version number in it (footer and PDF metadata).
+2. Run: `python build.py`
+3. Add a Changelog line.
 4. Commit to `main` as "90-day-supply-list vX.X".
-5. Wait for the "pages build and deployment" run in Actions to show green.
-6. On fancyape.com, update the link's `?v=` number to match the new version, e.g.:
-   `https://thecompositiongroup.github.io/fancyape-free-files/90-day-supply-list/90-day-supply-list.pdf?v=1.2`
-7. Test the link in a private window.
+5. Wait for "pages build and deployment" to show green in Actions.
+6. On fancyape.com, update the link's `?v=` number to the new version.
