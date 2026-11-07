@@ -16,4 +16,4 @@ Figures 1, 3, 4 and 5 are not drawn yet. They will be linked when they exist.
 
 ## License
 
-The PDFs and the linked files are under CC BY-SA 4.0, as stated in the source repository's [license](https://github.com/TheCompositionGroup/CDP_VISIBLE-HUM/blob/main/LICENSE.md). Attribution: FA-HUM-001, *Make the Hum Visible*, The Composition Group LLC (Fancy Ape).
+The PDFs and the linked files are under CC BY-SA 4.0, as stated in the source repository's [license](https://github.com/TheCompositionGroup/CDP_VISIBLE-HUM/blob/main/LICENSE.md). Attribution: FA-HUM-001, *Make the Hum Visible*, Fancy Ape.
