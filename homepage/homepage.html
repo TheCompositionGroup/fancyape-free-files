@@ -3,45 +3,47 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 <style>
-.fape-hero,.fape-gallery{font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;box-sizing:border-box}
-.fape-hero *,.fape-gallery *{box-sizing:border-box}
-.fape-hero{background:#7A6F63;color:#fff;text-align:center;min-height:30vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px 24px}
-.fape-eyebrow{margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
-.fape-hero-title{margin:0 0 16px;font-family:'Space Grotesk','Inter',sans-serif;font-weight:700;font-size:clamp(40px,7vw,80px);line-height:1;text-transform:uppercase;color:#fff}
-.fape-hero-title span{display:block}
-.fape-hero-text{margin:0;max-width:560px;font-size:clamp(16px,2vw,19px);line-height:1.5;color:#fff}
-.fape-gallery{background:#fff;color:#171717;padding:64px 0 72px}
-.fape-inner{max-width:1200px;margin:0 auto;padding:0 24px}
-.fape-gallery .fape-eyebrow{color:#846225}
-.fape-heading{margin:0 0 32px;font-family:'Space Grotesk','Inter',sans-serif;font-weight:700;font-size:clamp(28px,4vw,44px);line-height:1.1;text-transform:uppercase;color:#171717}
-.fape-carousel{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;padding-bottom:12px;scrollbar-width:thin;scrollbar-color:#846225 #F8F5F0}
-.fape-card{flex:0 0 calc((100% - 40px) / 3);scroll-snap-align:start;display:block;color:inherit;text-decoration:none}
-.fape-card-media{aspect-ratio:4/5;background:#F8F5F0;padding:12px;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.fape-card-media img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .4s ease}
-.fape-card:hover .fape-card-media img,.fape-card:focus-visible .fape-card-media img{transform:scale(1.03)}
-.fape-card:focus-visible{outline:2px solid #846225;outline-offset:3px}
-.fape-card-cat{display:block;margin-top:14px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#846225}
-.fape-card-title{display:block;margin-top:4px;font-family:'Space Grotesk','Inter',sans-serif;font-weight:700;font-size:20px;line-height:1.25;color:#171717}
-.fape-swipe{display:none;margin:12px 0 0;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#555E6C}
-.fape-cta{text-align:center;margin-top:40px}
-.fape-btn{display:inline-block;padding:16px 32px;border:2px solid #171717;background:#fff;color:#171717;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;transition:background .2s ease,color .2s ease}
-.fape-btn:hover,.fape-btn:focus-visible{background:#171717;color:#fff}
-@media (max-width:900px){.fape-card{flex-basis:calc((100% - 20px) / 2)}}
+.fape-home{margin:0;padding:0}
+.fape-home .fape-hero,.fape-home .fape-gallery{font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;box-sizing:border-box}
+.fape-home .fape-hero *,.fape-home .fape-gallery *{box-sizing:border-box}
+.fape-home .fape-hero{background:#7A6F63;color:#fff;text-align:center;min-height:30vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px 24px}
+.fape-home .fape-eyebrow{margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.fape-home .fape-hero-title{margin:0 0 16px;font-family:'Space Grotesk','Inter',sans-serif;font-weight:700;font-size:clamp(40px,7vw,80px);line-height:1;text-transform:uppercase;color:#fff}
+.fape-home .fape-hero-title span{display:block}
+.fape-home .fape-hero-text{margin:0;max-width:560px;font-size:clamp(16px,2vw,19px);line-height:1.5;color:#fff}
+.fape-home .fape-gallery{background:#fff;color:#171717;padding:64px 0 72px}
+.fape-home .fape-inner{max-width:1200px;margin:0 auto;padding:0 24px}
+.fape-home .fape-gallery .fape-eyebrow{color:#846225}
+.fape-home .fape-heading{margin:0 0 32px;font-family:'Space Grotesk','Inter',sans-serif;font-weight:700;font-size:clamp(28px,4vw,44px);line-height:1.1;text-transform:uppercase;color:#171717}
+.fape-home .fape-carousel{display:flex;align-items:flex-start;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;padding-bottom:12px;scrollbar-width:thin;scrollbar-color:#846225 #F8F5F0}
+.fape-home .fape-card{flex:0 0 calc((100% - 40px) / 3);scroll-snap-align:start;display:block;color:inherit;text-decoration:none}
+.fape-home .fape-card-media{background:#F8F5F0;padding:0;margin:0;line-height:0;overflow:hidden}
+.fape-home .fape-card-media img{display:block;width:100%;height:auto;max-width:100%;margin:0;padding:0;border:0;object-fit:contain;transition:transform .4s ease}
+.fape-home .fape-card:hover .fape-card-media img,.fape-home .fape-card:focus-visible .fape-card-media img{transform:scale(1.03)}
+.fape-home .fape-card:focus-visible{outline:2px solid #846225;outline-offset:3px}
+.fape-home .fape-card-cat{display:block;margin-top:14px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#846225}
+.fape-home .fape-card-title{display:block;margin-top:4px;font-family:'Space Grotesk','Inter',sans-serif;font-weight:700;font-size:20px;line-height:1.25;color:#171717}
+.fape-home .fape-swipe{display:none;margin:12px 0 0;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#555E6C}
+.fape-home .fape-cta{text-align:center;margin-top:40px}
+.fape-home .fape-btn{display:inline-block;padding:16px 32px;border:2px solid #171717;background:#fff;color:#171717;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;transition:background .2s ease,color .2s ease}
+.fape-home .fape-btn:hover,.fape-home .fape-btn:focus-visible{background:#171717;color:#fff}
+@media (max-width:900px){.fape-home .fape-card{flex-basis:calc((100% - 20px) / 2)}}
 @media (max-width:600px){
-  .fape-hero{padding:48px 20px}
-  .fape-gallery{padding:48px 0 56px}
-  .fape-inner{padding:0 20px}
-  .fape-carousel{gap:16px;margin-right:-20px;padding-right:20px}
-  .fape-card{flex-basis:82%}
-  .fape-swipe{display:block}
+  .fape-home .fape-hero{padding:48px 20px}
+  .fape-home .fape-gallery{padding:48px 0 56px}
+  .fape-home .fape-inner{padding:0 20px}
+  .fape-home .fape-carousel{gap:16px;margin-right:-20px;padding-right:20px}
+  .fape-home .fape-card{flex-basis:82%}
+  .fape-home .fape-swipe{display:block}
 }
 @media (prefers-reduced-motion:reduce){
-  .fape-card-media img,.fape-btn{transition:none}
-  .fape-card:hover .fape-card-media img{transform:none}
-  .fape-carousel{scroll-behavior:auto}
+  .fape-home .fape-card-media img,.fape-home .fape-btn{transition:none}
+  .fape-home .fape-card:hover .fape-card-media img{transform:none}
+  .fape-home .fape-carousel{scroll-behavior:auto}
 }
 </style>
 
+<div class="fape-home">
 <section class="fape-hero">
   <p class="fape-eyebrow">FANCY APE&reg;</p>
   <h1 class="fape-hero-title"><span>THE IDEA</span><span>IS THE ART.</span></h1>
@@ -83,3 +85,4 @@
     <div class="fape-cta"><a class="fape-btn" href="/artifacts">EXPLORE THE ARTIFACTS</a></div>
   </div>
 </section>
+</div>
