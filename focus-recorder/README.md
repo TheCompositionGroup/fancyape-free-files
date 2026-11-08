@@ -16,6 +16,8 @@ The clean version is a photo correction only. Nothing is redrawn. A few faint ma
 
 The 2026 addendum sheet is not drawn yet. It will be added when it exists.
 
+Concept package and bench tests: [github.com/TheCompositionGroup/focus-flute](https://github.com/TheCompositionGroup/focus-flute)
+
 ## Notes
 
 - The sheet is the original concept, kept as drawn. Later review changed some of its assumptions.
